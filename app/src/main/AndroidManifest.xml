@@ -33,6 +33,9 @@
         <meta-data
             android:name="osmdroid.configuration"
             android:value="osmdroid-default.properties" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="fa65e6e316cb16dacc20bdea7a69952c" />
 
     </application>
 

@@ -10,7 +10,7 @@ import java.util.Calendar
 class MainActivity : AppCompatActivity() {
     private lateinit var profil: Profil
     private val urlDepartement = "https://www.fsg.ulaval.ca/departements/departement-de-genie-electrique-et-de-genie-informatique"
-    private val urlUlaval = "https://www.google.com/maps/place/Université+Laval/@46.7793,-71.2765,17z"
+    private val urlUlaval = "https://www.google.com/maps?q=46.7793,-71.2765"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
