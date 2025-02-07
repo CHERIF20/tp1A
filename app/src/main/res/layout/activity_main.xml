@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="6dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textViewNomPrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ramatoulaye Barry"
+        android:textSize="20sp"
+        android:layout_marginTop="106dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnUlaval"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/btnUlaval"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Université Laval"
+        android:backgroundTint="#CCCCCC"
+        android:textColor="#000000"
+        style="@style/Widget.MaterialComponents.Button"
+        app:cornerRadius="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNomPrenom"
+        app:layout_constraintBottom_toTopOf="@id/btnDepartement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnDepartement"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Département de génie\nélectrique et de génie\ninformatique"
+        android:backgroundTint="#CCCCCC"
+        android:textColor="#000000"
+        style="@style/Widget.MaterialComponents.Button"
+        app:cornerRadius="0dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/btnUlaval"
+        app:layout_constraintBottom_toTopOf="@id/btnProfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnProfil"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Mon Profil"
+        android:backgroundTint="#CCCCCC"
+        android:textColor="#000000"
+        style="@style/Widget.MaterialComponents.Button"
+        app:cornerRadius="0dp"
+        app:layout_constraintTop_toBottomOf="@id/btnDepartement"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
